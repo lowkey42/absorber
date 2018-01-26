@@ -11,18 +11,22 @@ public class AbsorbtionTrigger : MonoBehaviour {
 	[SerializeField] protected GameObject[] m_NonePrefab;
 
 	void OnTriggerEnter2D(Collider2D other) {
-		handle (other, m_NewPrefab, m_TargetElement);
-		Debug.Log ("enter");
+		handle (other.gameObject, m_NewPrefab, m_TargetElement);
 	}
-
 	void OnTriggerExit2D(Collider2D other) {
-		handle (other, m_NonePrefab, Element.none);
-		Debug.Log ("exit");
+		handle (other.gameObject, m_NonePrefab, Element.none);
 	}
 
-	private void handle(Collider2D other, GameObject[] prefabs, Element element) {
-		if (other.gameObject.tag == m_Player1Tag || other.gameObject.tag == m_Player2Tag) {
-			var changeFirstPlayer = other.gameObject.tag == m_Player2Tag;
+	void OnCollisionEnter2D(Collision2D collision) {
+		handle(collision.gameObject, m_NewPrefab, m_TargetElement);
+	}
+	void OnCollisionExit2D(Collision2D collision) {
+		handle(collision.gameObject, m_NonePrefab, Element.none);
+	}
+
+	private void handle(GameObject go, GameObject[] prefabs, Element element) {
+		if (go.tag == m_Player1Tag || go.tag == m_Player2Tag) {
+			var changeFirstPlayer = go.tag == m_Player2Tag;
 
 			var playerGos = GameObject.FindGameObjectsWithTag (changeFirstPlayer ? m_Player1Tag : m_Player2Tag);
 			var newPrefab = prefabs[changeFirstPlayer ? 0 : 1];
