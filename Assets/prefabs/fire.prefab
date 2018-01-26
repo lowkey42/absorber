@@ -21,8 +21,9 @@ GameObject:
   - component: {fileID: 4361467314468682}
   - component: {fileID: 212347877647683078}
   - component: {fileID: 61083928010766158}
+  - component: {fileID: 114437913793869838}
   m_Layer: 8
-  m_Name: Terrain_placeholder
+  m_Name: fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49,8 +50,8 @@ BoxCollider2D:
   m_GameObject: {fileID: 1993596236685122}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 55f8c752ba4cd4971a3864e2e2e9961d, type: 2}
-  m_IsTrigger: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -66,6 +67,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.56, y: 2.56}
   m_EdgeRadius: 0
+--- !u!114 &114437913793869838
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1993596236685122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9d404bcecde42ffa84ae8faa4d7b89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Player1Tag: Player1
+  m_Player2Tag: Player2
+  m_TargetElement: 2
+  m_NewPrefab:
+  - {fileID: 1340764436668784, guid: 246eed102fbbf4967815e7b8dde972fe, type: 2}
+  - {fileID: 1340764436668784, guid: 25fe576603f84448980495b917fd1431, type: 2}
+  m_NonePrefab:
+  - {fileID: 1340764436668784, guid: a4e9cd74d43c8410b9a38c1098c589b8, type: 2}
+  - {fileID: 1340764436668784, guid: dafe44256bbc04965a697975ff9c0b29, type: 2}
 --- !u!212 &212347877647683078
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -100,7 +121,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 910469982c9db448392058e073ce977f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 035a3ead107b64ec09da218e7ce8ec0d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

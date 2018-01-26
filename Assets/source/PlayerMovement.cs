@@ -24,8 +24,12 @@ public class PlayerMovement : MonoBehaviour
         m_CeilingCheck = transform.Find("CeilingCheck");
         m_Anim = GetComponent<Animator>();
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
-    }
+	}
 
+	public void CopyState(PlayerMovement other) {
+		m_FacingRight = other.m_FacingRight;
+		// TODO: set animation state
+	}
 
     private void FixedUpdate()
     {
