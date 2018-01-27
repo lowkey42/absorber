@@ -6,10 +6,10 @@ public class Killable : MonoBehaviour {
 
 	[SerializeField] private string m_Player1Tag = "Player1";
 	[SerializeField] private string m_Player2Tag = "Player2";
-
+	[SerializeField] private bool m_DieOnCollision = false;
 
 	void OnCollisionEnter2D(Collision2D collision) {
-		if (collision.collider.Distance (collision.otherCollider).distance > 0.5f) {
+		if (collision.collider.Distance (collision.otherCollider).distance > 0.5f || m_DieOnCollision) {
 			kill ();
 		}
 	}

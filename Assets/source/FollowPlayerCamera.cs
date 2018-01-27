@@ -20,7 +20,11 @@ public class FollowPlayerCamera : MonoBehaviour {
 	// Update is called once per frame
 	void LateUpdate () {
 		if (target != null && target.activeInHierarchy) {
-			// TODO: smooth
+			if (target.GetComponent<AlwaysCenterCamera> () != null) {
+				transform.position = target.transform.position + Vector3.forward * -4;
+				m_LastTargetPosition = target.transform.position;
+				return;
+			}
 
 			// only update lookahead pos if accelerating or changed direction
 			float xMoveDelta = (target.transform.position - m_LastTargetPosition).x;

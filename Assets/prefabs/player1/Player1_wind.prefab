@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 58480266990438390}
   - component: {fileID: 114000193632025964}
   - component: {fileID: 114109281009336956}
+  - component: {fileID: 114483636463427750}
   m_Layer: 13
   m_Name: Player1_wind
   m_TagString: Player1
@@ -192,6 +193,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Player1Tag: Player1
   m_Player2Tag: Player2
+  m_DieOnCollision: 1
+--- !u!114 &114483636463427750
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1340764436668784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 362cd27c38bfe4dbf9616937740ec2f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114692783715756908
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -203,7 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2122a0721e085446d8d30b5e36b33d76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MaxSpeed: 10
+  m_MaxSpeed: 8
   m_JumpForce: 80000
   m_AirControl: 1
   m_WhatIsGround:

@@ -17,8 +17,8 @@ public class PlayerMovement : MonoBehaviour
     private Animator m_Anim;            // Reference to the player's animator component.
     private Rigidbody2D m_Rigidbody2D;
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
-	private float m_FlyAngle = 0f;
-	private float m_FlyTargetAngle = 0f;
+	private float m_FlyAngle = 90*Mathf.Deg2Rad;
+	private float m_FlyTargetAngle = 90*Mathf.Deg2Rad;
 
     private void Awake()
     {
