@@ -8,6 +8,7 @@ tpsheetFileNames:
 - Assets/sprites/gameplay/kabel.tpsheet
 - Assets/sprites/gameplay/water.tpsheet
 - Assets/sprites/gameplay/water2.tpsheet
+- Assets/sprites/players/wind.tpsheet
 textureFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 - Assets/sprites/deco/grass.png
@@ -16,8 +17,10 @@ textureFileNames:
 - Assets/sprites/gameplay/kabel.png
 - Assets/sprites/gameplay/water.png
 - Assets/sprites/gameplay/water2.png
+- Assets/sprites/players/wind.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
 - 
 - 
 - 

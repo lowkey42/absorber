@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RequiredElement: 3
-  m_RequiredMinimalVelocity: 1
+  m_RequiredMinimalVelocity: 0.5
   m_Corpse: {fileID: 1993596236685122, guid: 8d060544b098d45698c64f8b58b15773, type: 2}
   m_SoundEffect: {fileID: 8300000, guid: 41a6626859fce4655bb365b19eedf4d8, type: 3}
 --- !u!212 &212347877647683078

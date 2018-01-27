@@ -1,0 +1,254 @@
+fileFormatVersion: 2
+guid: 3dcf42376c41140e0a3d0268c6ab93a7
+timeCreated: 1517080620
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: wind
+    21300002: 1
+    21300004: 2
+    21300006: 3
+    21300008: 4
+    21300010: 5
+    21300012: 6
+    21300014: 8
+    21300016: 9
+    21300018: 10
+    21300020: 11
+    21300022: 12
+    21300024: player_wind_1
+    21300026: player_wind_2
+    21300028: player_wind_3
+    21300030: player_wind_4
+    21300032: player_wind_5
+    21300034: player_wind_6
+    21300036: player_wind_8
+    21300038: player_wind_9
+    21300040: player_wind_10
+    21300042: player_wind_11
+    21300044: player_wind_12
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player_wind_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1570
+        width: 429
+        height: 477
+      alignment: 9
+      pivot: {x: 0.5337995, y: 0.5031447}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_wind_2
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1565
+        width: 401
+        height: 482
+      alignment: 9
+      pivot: {x: 0.553616, y: 0.49585062}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_wind_3
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 1566
+        width: 393
+        height: 481
+      alignment: 9
+      pivot: {x: 0.5496183, y: 0.50727654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_wind_4
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 1561
+        width: 436
+        height: 486
+      alignment: 9
+      pivot: {x: 0.54357797, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_wind_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1082
+        width: 429
+        height: 477
+      alignment: 9
+      pivot: {x: 0.5337995, y: 0.5031447}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_wind_6
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1077
+        width: 401
+        height: 482
+      alignment: 9
+      pivot: {x: 0.553616, y: 0.49585062}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_wind_8
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 1073
+        width: 436
+        height: 486
+      alignment: 9
+      pivot: {x: 0.54357797, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_wind_9
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 1082
+        width: 429
+        height: 477
+      alignment: 9
+      pivot: {x: 0.5337995, y: 0.5031447}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_wind_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 589
+        width: 401
+        height: 482
+      alignment: 9
+      pivot: {x: 0.553616, y: 0.49585062}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_wind_11
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 590
+        width: 393
+        height: 481
+      alignment: 9
+      pivot: {x: 0.5496183, y: 0.50727654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_wind_12
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 585
+        width: 436
+        height: 486
+      alignment: 9
+      pivot: {x: 0.54357797, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

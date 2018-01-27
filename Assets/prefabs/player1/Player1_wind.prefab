@@ -38,11 +38,11 @@ GameObject:
   - component: {fileID: 50887387762304488}
   - component: {fileID: 114692783715756908}
   - component: {fileID: 114924098691306656}
-  - component: {fileID: 61345709835205168}
   - component: {fileID: 58480266990438390}
   - component: {fileID: 114000193632025964}
   - component: {fileID: 114109281009336956}
   - component: {fileID: 114483636463427750}
+  - component: {fileID: 95719266605918116}
   m_Layer: 13
   m_Name: Player1_wind
   m_TagString: Player1
@@ -120,7 +120,7 @@ Rigidbody2D:
   m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: b7f1e46ea7e42423da87ba6f2a85a74d, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -138,34 +138,26 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.32}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.96196526
---- !u!61 &61345709835205168
-BoxCollider2D:
+--- !u!95 &95719266605918116
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1340764436668784}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: b7f1e46ea7e42423da87ba6f2a85a74d, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.4124514}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.56}
-    newSize: {x: 2.56, y: 2.56}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.56, y: 1.7350972}
-  m_EdgeRadius: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6cd20273548d24ed695563329b1e6560, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114000193632025964
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -222,7 +214,9 @@ MonoBehaviour:
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 768
+  m_InertiaFactor: 0
   m_Fly: 1
+  m_ForceFly: 0
 --- !u!114 &114924098691306656
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -269,12 +263,12 @@ SpriteRenderer:
   m_SortingLayerID: -213459621
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 01f6fb3a9937c44fcbd33104e6bc93fd, type: 3}
+  m_Sprite: {fileID: 21300024, guid: 3dcf42376c41140e0a3d0268c6ab93a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.56, y: 2.56}
+  m_Size: {x: 4.29, y: 4.77}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
