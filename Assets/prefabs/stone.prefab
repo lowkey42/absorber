@@ -120,8 +120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Player1Tag: Player1
   m_Player2Tag: Player2
-  m_SourceElement: 000000000200000004000000
-  m_TargetElement: 5
+  m_SourceElement: 00000000020000000400000005000000
+  m_TargetElement: 3
   m_NewPrefab:
   - {fileID: 1340764436668784, guid: 75a6e64c2f39e4b42aacf75f0f9bfa27, type: 2}
   - {fileID: 1340764436668784, guid: eabf74728175c48ab8491cbcec03af71, type: 2}

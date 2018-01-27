@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     const float k_CeilingRadius = .01f; // Radius of the overlap circle to determine if the player can stand up
     private Animator m_Anim;            // Reference to the player's animator component.
     private Rigidbody2D m_Rigidbody2D;
+	private GameplaySystem m_GameplaySys;
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private float m_FlyAngle = 90*Mathf.Deg2Rad;
 	private float m_FlyTargetAngle = 90*Mathf.Deg2Rad;
@@ -29,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
         m_CeilingCheck = transform.Find("CeilingCheck");
         m_Anim = GetComponent<Animator>();
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
+		m_GameplaySys = GameObject.FindObjectOfType<GameplaySystem> ();
 	}
 
 	public void CopyState(PlayerMovement other) {
@@ -126,6 +128,8 @@ public class PlayerMovement : MonoBehaviour
 				m_Anim.SetBool ("Ground", false);
 			}
             m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+			if(m_GameplaySys!=null)
+				m_GameplaySys.PlayJumpSoundEffect();
         }
     }
 

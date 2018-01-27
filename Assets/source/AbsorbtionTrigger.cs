@@ -9,6 +9,11 @@ public class AbsorbtionTrigger : MonoBehaviour {
 	[SerializeField] protected List<Element> m_SourceElement;
 	[SerializeField] protected Element m_TargetElement;
 	[SerializeField] protected GameObject[] m_NewPrefab;
+	private GameplaySystem m_GameplaySys;
+
+	private void Awake() {
+		m_GameplaySys = GameObject.FindObjectOfType<GameplaySystem> ();
+	}
 
 	void OnTriggerEnter2D(Collider2D other) {
 		handle (other.gameObject, m_NewPrefab, m_TargetElement);
@@ -61,6 +66,10 @@ public class AbsorbtionTrigger : MonoBehaviour {
 
 		if (go.activeSelf && elementTag != null && elementTag.getElement () != element && (element==Element.none || m_SourceElement.Contains(elementTag.getElement()))) {
 			Util.replacePlayer (go, prefab);
+
+			if (m_GameplaySys != null) {
+				m_GameplaySys.PlayAbsorbSoundEffect (element);
+			}
 		}
 	}
 

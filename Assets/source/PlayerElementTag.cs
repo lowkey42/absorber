@@ -7,6 +7,11 @@ public class PlayerElementTag : MonoBehaviour {
 	[SerializeField] protected Element m_Element;
 	[SerializeField] protected GameObject m_NonePrefab;
 	private float m_ToNoneInSeconds = -1;
+	private GameplaySystem m_GameplaySys;
+
+	private void Awake() {
+		m_GameplaySys = GameObject.FindObjectOfType<GameplaySystem> ();
+	}
 
 	public Element getElement() {
 		return m_Element;
@@ -25,6 +30,7 @@ public class PlayerElementTag : MonoBehaviour {
 
 			if (m_ToNoneInSeconds <= 0) {
 				Util.replacePlayer (gameObject, m_NonePrefab);
+				m_GameplaySys.PlayAbsorbSoundEffect (Element.none);
 			}
 		}
 	}

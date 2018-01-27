@@ -7,6 +7,11 @@ public class Killable : MonoBehaviour {
 	[SerializeField] private string m_Player1Tag = "Player1";
 	[SerializeField] private string m_Player2Tag = "Player2";
 	[SerializeField] private bool m_DieOnCollision = false;
+	private GameplaySystem m_GameplaySys;
+
+	private void Awake() {
+		m_GameplaySys = GameObject.FindObjectOfType<GameplaySystem> ();
+	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
 		if (collision.collider.Distance (collision.otherCollider).distance > 0.5f || m_DieOnCollision) {
@@ -15,6 +20,10 @@ public class Killable : MonoBehaviour {
 	}
 
 	public void kill() {
+		if (m_GameplaySys != null) {
+			m_GameplaySys.PlayDeathSoundEffect ();
+		}
+
 		foreach (GameObject go in GameObject.FindGameObjectsWithTag(m_Player1Tag)) {
 			killPlayer (go);
 		}
