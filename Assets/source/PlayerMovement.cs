@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 	[SerializeField] private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
 	[SerializeField] private float m_InertiaFactor = 0;
 	[SerializeField] private bool m_Fly = false;
+	[SerializeField] private bool m_ForceFly = false;
 
     private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
     const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
@@ -33,6 +34,16 @@ public class PlayerMovement : MonoBehaviour
 	public void CopyState(PlayerMovement other) {
 		m_FacingRight = other.m_FacingRight;
 		// TODO: set animation state
+	}
+
+	public void SetFly(bool b) {
+		m_Fly = b;
+
+		var vel = m_Rigidbody2D.velocity;
+		if (vel.magnitude > 0.0001f) {
+			vel.Normalize ();
+			m_FlyAngle = m_FlyTargetAngle = Mathf.Atan2 (-vel.y, vel.x);
+		}
 	}
 
     private void FixedUpdate()
@@ -75,12 +86,13 @@ public class PlayerMovement : MonoBehaviour
 					m_FlyTargetAngle = Mathf.Atan2 (-dir.y, dir.x);
 				}
 
-				if (Mathf.Abs (m_FlyTargetAngle - m_FlyAngle) > 0.00001f) {
-					m_FlyAngle += Mathf.DeltaAngle(m_FlyAngle*Mathf.Rad2Deg, m_FlyTargetAngle*Mathf.Rad2Deg)*Mathf.Deg2Rad*Mathf.Min(1f, Time.deltaTime*4);
-				}
+				if (dir.magnitude > 0.01f || m_ForceFly) {
+					if (Mathf.Abs (m_FlyTargetAngle - m_FlyAngle) > 0.00001f) {
+						m_FlyAngle += Mathf.DeltaAngle (m_FlyAngle * Mathf.Rad2Deg, m_FlyTargetAngle * Mathf.Rad2Deg) * Mathf.Deg2Rad * Mathf.Min (1f, Time.deltaTime * 4);
+					}
 
-				// TODO: smooth rotation
-				m_Rigidbody2D.velocity = new Vector2 (Mathf.Cos(m_FlyAngle), Mathf.Sin(m_FlyAngle)) * m_MaxSpeed;
+					m_Rigidbody2D.velocity = new Vector2 (Mathf.Cos (m_FlyAngle), Mathf.Sin (m_FlyAngle)) * m_MaxSpeed;
+				}
 
 			} else {
 				var vel_x = move_x * m_MaxSpeed;
