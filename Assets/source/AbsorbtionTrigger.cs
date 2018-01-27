@@ -9,20 +9,34 @@ public class AbsorbtionTrigger : MonoBehaviour {
 	[SerializeField] protected List<Element> m_SourceElement;
 	[SerializeField] protected Element m_TargetElement;
 	[SerializeField] protected GameObject[] m_NewPrefab;
-	[SerializeField] protected GameObject[] m_NonePrefab;
 
 	void OnTriggerEnter2D(Collider2D other) {
 		handle (other.gameObject, m_NewPrefab, m_TargetElement);
 	}
 	void OnTriggerExit2D(Collider2D other) {
-		handle (other.gameObject, m_NonePrefab, Element.none);
+		revert(other.gameObject);
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
 		handle(collision.gameObject, m_NewPrefab, m_TargetElement);
 	}
 	void OnCollisionExit2D(Collision2D collision) {
-		handle(collision.gameObject, m_NonePrefab, Element.none);
+		revert(collision.gameObject);
+	}
+
+	private void revert(GameObject go) {
+		if (go.tag == m_Player1Tag || go.tag == m_Player2Tag) {
+			var changeFirstPlayer = go.tag == m_Player2Tag;
+
+			var playerGos = GameObject.FindGameObjectsWithTag (changeFirstPlayer ? m_Player1Tag : m_Player2Tag);
+
+			foreach (GameObject otherPlayer in playerGos) {
+				var elementTag = otherPlayer.GetComponent<PlayerElementTag> ();
+				if (elementTag != null) {
+					elementTag.RevertToNoneIn (0.5f);
+				}
+			}
+		}
 	}
 
 	private void handle(GameObject go, GameObject[] prefabs, Element element) {
@@ -40,12 +54,13 @@ public class AbsorbtionTrigger : MonoBehaviour {
 
 	private void changePlayer(GameObject go, GameObject prefab, Element element) {
 		var elementTag = go.GetComponent<PlayerElementTag> ();
+		if (elementTag == null)
+			return;
+
+		elementTag.CancleNoneRevert();
+
 		if (go.activeSelf && elementTag != null && elementTag.getElement () != element && (element==Element.none || m_SourceElement.Contains(elementTag.getElement()))) {
-			GameObject newGo = (GameObject) Instantiate(prefab, go.transform.position, go.transform.rotation);
-			newGo.GetComponent<PlayerMovementController> ().CopyState (go.GetComponent<PlayerMovementController>());
-			newGo.GetComponent<PlayerMovement> ().CopyState (go.GetComponent<PlayerMovement>());
-			go.SetActive (false);
-			Destroy (go);
+			Util.replacePlayer (go, prefab);
 		}
 	}
 

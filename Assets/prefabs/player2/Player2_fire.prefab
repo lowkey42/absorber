@@ -195,9 +195,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Player1Tag: Player1
   m_Player2Tag: Player2
-  m_NonePrefab:
-  - {fileID: 1340764436668784, guid: dafe44256bbc04965a697975ff9c0b29, type: 2}
-  - {fileID: 1340764436668784, guid: dafe44256bbc04965a697975ff9c0b29, type: 2}
 --- !u!114 &114861302907460896
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -210,6 +207,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Element: 2
+  m_NonePrefab: {fileID: 1340764436668784, guid: dafe44256bbc04965a697975ff9c0b29,
+    type: 2}
 --- !u!114 &114924098691306656
 MonoBehaviour:
   m_ObjectHideFlags: 1
