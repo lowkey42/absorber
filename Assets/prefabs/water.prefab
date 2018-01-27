@@ -98,9 +98,6 @@ MonoBehaviour:
   m_NewPrefab:
   - {fileID: 1340764436668784, guid: 4d88db838c23a429d97696f451b5a84c, type: 2}
   - {fileID: 1340764436668784, guid: 5c771e4bc51e0468c88a7e1062dca4e4, type: 2}
-  m_NonePrefab:
-  - {fileID: 1340764436668784, guid: a4e9cd74d43c8410b9a38c1098c589b8, type: 2}
-  - {fileID: 1340764436668784, guid: dafe44256bbc04965a697975ff9c0b29, type: 2}
 --- !u!212 &212347877647683078
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -132,8 +129,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1209450903
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d320194c6c77a4537855814b8d4b5b40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
