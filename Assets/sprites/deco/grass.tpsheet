@@ -1,0 +1,16 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:f6eab1aa21ae518dead8f8a5289b87fc:e9de7504c0e3a925088e5d772e6e9fc1:46d46b01a1ddc0b07371e2fd7b4a7bc3$
+#
+:format=40300
+:texture=grass.png
+:size=512x512
+:pivotpoints=enabled
+:borders=disabled
+
+graß_S1;1;77;333;434; 0.27927927927927926;0.5737327188940092; 0;0;0;0; 13;98;365;64;198;73;77;57;20;37;0;0;80;7;203;32;275;68;355;77;434;333;13;327;19;333;23; 9;7;0;1;6;7;1;5;6;1;0;8;9;5;2;3;5;1;2;5;3;4;7;8;0;10;11;12
+graß_S2;336;102;81;409; 1.5432098765432098;0.589242053789731; 0;0;0;0; 8;76;406;55;242;81;50;71;2;52;0;0;126;8;224;58;409; 6;1;6;7;2;3;4;2;4;5;1;2;5;1;5;6;0;1;7

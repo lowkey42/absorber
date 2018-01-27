@@ -2,16 +2,25 @@ version: 2
 importPivots: 1
 tpsheetFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+- Assets/sprites/deco/grass.tpsheet
 - Assets/sprites/gameplay/fire.tpsheet
 - Assets/sprites/gameplay/fire2.tpsheet
+- Assets/sprites/gameplay/kabel.tpsheet
 - Assets/sprites/gameplay/water.tpsheet
+- Assets/sprites/gameplay/water2.tpsheet
 textureFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
+- Assets/sprites/deco/grass.png
 - Assets/sprites/gameplay/fire.png
 - Assets/sprites/gameplay/fire2.png
+- Assets/sprites/gameplay/kabel.png
 - Assets/sprites/gameplay/water.png
+- Assets/sprites/gameplay/water2.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
+- 
+- 
 - 
 - 
 - 
