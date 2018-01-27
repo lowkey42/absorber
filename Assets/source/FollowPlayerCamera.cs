@@ -17,6 +17,8 @@ public class FollowPlayerCamera : MonoBehaviour {
 	private Vector3 m_CurrentVelocity;
 	private Vector3 m_LookAheadPos;
 
+	private bool m_FirstTarget = true;
+
 	// Update is called once per frame
 	void LateUpdate () {
 		if (target != null && target.activeInHierarchy) {
@@ -58,7 +60,8 @@ public class FollowPlayerCamera : MonoBehaviour {
 
 		} else {
 			target = GameObject.FindGameObjectWithTag (followTag);
-			if (target != null && target.activeInHierarchy) {
+			if (m_FirstTarget && target != null && target.activeInHierarchy) {
+				m_FirstTarget = false;
 				transform.position = target.transform.position + Vector3.forward * -4;
 				m_LastTargetPosition = target.transform.position;
 			}

@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212409185999260180}
   - component: {fileID: 61438457537568374}
   m_Layer: 14
-  m_Name: Gitter
+  m_Name: Gitter2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,7 +55,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.010118961, y: 0.010118961}
   m_SpriteTilingProperty:
-    border: {x: 0.63, y: 0, z: 0.61, w: 0.11}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 5.12, y: 5.12}
     newSize: {x: 2.56, y: 2.56}
@@ -100,7 +100,7 @@ SpriteRenderer:
   m_SortingLayerID: -1209450903
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2e709ef24545c4b899b1532ea73aa5a4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 95aabe288eae74999b25898a0aec887d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
