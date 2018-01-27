@@ -564,4 +564,5 @@ MonoBehaviour:
   soundEffectAbsorbWind: {fileID: 8300000, guid: eaa99f36cfc1549298473aa5721b4597,
     type: 3}
   soundEffectJump: {fileID: 8300000, guid: f5adf157a123943baa495e2520b9fed5, type: 3}
-  soundEffectDeath: {fileID: 8300000, guid: c1e0b538f2f7748fc9b27d2a2c18a6e5, type: 3}
+  soundEffectDeath: {fileID: 8300000, guid: 5f9f202c0a7324990ac488c7ef0e6f78, type: 3}
+  soundEffectWin: {fileID: 0}

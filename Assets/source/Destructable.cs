@@ -6,6 +6,7 @@ public class Destructable : MonoBehaviour {
 
 	[SerializeField] protected Element m_RequiredElement;
 	[SerializeField] protected float m_RequiredMinimalVelocity = 0f;
+	[SerializeField] protected GameObject m_Corpse;
 
 	void OnCollisionEnter2D(Collision2D collision) {
 		if (m_RequiredMinimalVelocity > 0 && collision.relativeVelocity.magnitude < m_RequiredMinimalVelocity)
@@ -14,7 +15,7 @@ public class Destructable : MonoBehaviour {
 		var elementTag = collision.gameObject.GetComponent<PlayerElementTag> ();
 
 		if (matchesElement(collision.gameObject)) {
-			// TODO: play animation
+			// TODO: play soundeffect
 			Destroy(gameObject);
 		}
 	}
