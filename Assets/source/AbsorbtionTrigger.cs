@@ -6,6 +6,7 @@ public class AbsorbtionTrigger : MonoBehaviour {
 
 	[SerializeField] private string m_Player1Tag = "Player1";
 	[SerializeField] private string m_Player2Tag = "Player2";
+	[SerializeField] protected List<Element> m_SourceElement;
 	[SerializeField] protected Element m_TargetElement;
 	[SerializeField] protected GameObject[] m_NewPrefab;
 	[SerializeField] protected GameObject[] m_NonePrefab;
@@ -39,10 +40,11 @@ public class AbsorbtionTrigger : MonoBehaviour {
 
 	private void changePlayer(GameObject go, GameObject prefab, Element element) {
 		var elementTag = go.GetComponent<PlayerElementTag> ();
-		if (elementTag != null && elementTag.getElement () != element) {
+		if (go.activeSelf && elementTag != null && elementTag.getElement () != element && (element==Element.none || m_SourceElement.Contains(elementTag.getElement()))) {
 			GameObject newGo = (GameObject) Instantiate(prefab, go.transform.position, go.transform.rotation);
 			newGo.GetComponent<PlayerMovementController> ().CopyState (go.GetComponent<PlayerMovementController>());
 			newGo.GetComponent<PlayerMovement> ().CopyState (go.GetComponent<PlayerMovement>());
+			go.SetActive (false);
 			Destroy (go);
 		}
 	}

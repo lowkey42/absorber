@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 212347877647683078}
   - component: {fileID: 61083928010766158}
   - component: {fileID: 114437913793869838}
-  - component: {fileID: 114820244734193024}
+  - component: {fileID: 114317064704462624}
   m_Layer: 8
-  m_Name: fire
+  m_Name: water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,6 +68,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.56, y: 2.56}
   m_EdgeRadius: 0
+--- !u!114 &114317064704462624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1993596236685122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b1b3e6e961e4f398e60a252aae5680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Element: 02000000
 --- !u!114 &114437913793869838
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -82,25 +94,13 @@ MonoBehaviour:
   m_Player1Tag: Player1
   m_Player2Tag: Player2
   m_SourceElement: 000000000100000003000000
-  m_TargetElement: 2
+  m_TargetElement: 5
   m_NewPrefab:
-  - {fileID: 1340764436668784, guid: 246eed102fbbf4967815e7b8dde972fe, type: 2}
-  - {fileID: 1340764436668784, guid: 25fe576603f84448980495b917fd1431, type: 2}
+  - {fileID: 1340764436668784, guid: 4d88db838c23a429d97696f451b5a84c, type: 2}
+  - {fileID: 1340764436668784, guid: 5c771e4bc51e0468c88a7e1062dca4e4, type: 2}
   m_NonePrefab:
   - {fileID: 1340764436668784, guid: a4e9cd74d43c8410b9a38c1098c589b8, type: 2}
   - {fileID: 1340764436668784, guid: dafe44256bbc04965a697975ff9c0b29, type: 2}
---- !u!114 &114820244734193024
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1993596236685122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33b1b3e6e961e4f398e60a252aae5680, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Element: 0500000004000000
 --- !u!212 &212347877647683078
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -135,7 +135,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 035a3ead107b64ec09da218e7ce8ec0d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d320194c6c77a4537855814b8d4b5b40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

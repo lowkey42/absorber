@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 61345709835205168}
   - component: {fileID: 58480266990438390}
   - component: {fileID: 114605806036381446}
+  - component: {fileID: 114159550534665160}
   m_Layer: 9
   m_Name: Player1_electricity
   m_TagString: Player1
@@ -164,6 +165,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.56, y: 1.7350972}
   m_EdgeRadius: 0
+--- !u!114 &114159550534665160
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1340764436668784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1d0bbdd6548a4307a01233b36deb5c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Player1Tag: Player1
+  m_Player2Tag: Player2
+  m_NonePrefab:
+  - {fileID: 1340764436668784, guid: a4e9cd74d43c8410b9a38c1098c589b8, type: 2}
+  - {fileID: 1340764436668784, guid: a4e9cd74d43c8410b9a38c1098c589b8, type: 2}
 --- !u!114 &114605806036381446
 MonoBehaviour:
   m_ObjectHideFlags: 1
