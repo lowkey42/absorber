@@ -35,7 +35,10 @@ public class PlayerMovement : MonoBehaviour
 
 	public void CopyState(PlayerMovement other) {
 		m_FacingRight = other.m_FacingRight;
-		// TODO: set animation state
+
+		Vector3 theScale = transform.localScale;
+		theScale.x *= Mathf.Sign(other.transform.localScale.x);
+		transform.localScale = theScale;
 	}
 
 	public void SetFly(bool b) {
@@ -65,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
 			m_Anim.SetBool ("Ground", m_Grounded);
 
 			// Set the vertical animation
-			m_Anim.SetFloat ("vSpeed", m_Rigidbody2D.velocity.y);
+			m_Anim.SetFloat ("vSpeed", Mathf.Max(0.4f, m_Rigidbody2D.velocity.y/m_MaxSpeed));
 		}
     }
 
