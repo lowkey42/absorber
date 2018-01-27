@@ -14,7 +14,7 @@ public class Killable : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
-		if (collision.collider.Distance (collision.otherCollider).distance > 0.5f || m_DieOnCollision) {
+		if (collision.collider.Distance (collision.otherCollider).distance > 1.0f || m_DieOnCollision) {
 			kill ();
 		}
 	}
