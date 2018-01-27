@@ -9,6 +9,7 @@ tpsheetFileNames:
 - Assets/sprites/gameplay/water.tpsheet
 - Assets/sprites/gameplay/water2.tpsheet
 - Assets/sprites/players/player_1_electricity.tpsheet
+- Assets/sprites/players/player_1_fire.tpsheet
 - Assets/sprites/players/player_1_neutral.tpsheet
 - Assets/sprites/players/player_1_stone.tpsheet
 - Assets/sprites/players/player_1_water.tpsheet
@@ -22,12 +23,14 @@ textureFileNames:
 - Assets/sprites/gameplay/water.png
 - Assets/sprites/gameplay/water2.png
 - Assets/sprites/players/player_1_electricity.png
+- Assets/sprites/players/player_1_fire.png
 - Assets/sprites/players/player_1_neutral.png
 - Assets/sprites/players/player_1_stone.png
 - Assets/sprites/players/player_1_water.png
 - Assets/sprites/players/wind.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
 - 
 - 
 - 
