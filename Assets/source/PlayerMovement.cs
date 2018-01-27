@@ -68,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
 			m_Anim.SetBool ("Ground", m_Grounded);
 
 			// Set the vertical animation
-			m_Anim.SetFloat ("vSpeed", Mathf.Max(0.4f, m_Rigidbody2D.velocity.y/m_MaxSpeed));
+			m_Anim.SetFloat ("vSpeed", m_Rigidbody2D.velocity.y/m_MaxSpeed);
 		}
     }
 
