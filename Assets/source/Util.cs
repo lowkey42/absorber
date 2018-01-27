@@ -9,6 +9,7 @@ public class Util {
 		newGo.GetComponent<PlayerMovementController> ().CopyState (go.GetComponent<PlayerMovementController>());
 		newGo.GetComponent<PlayerMovement> ().CopyState (go.GetComponent<PlayerMovement>());
 		go.SetActive (false);
+		GameObject.Destroy (go);
 	}
 
 }

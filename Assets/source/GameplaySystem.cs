@@ -14,7 +14,6 @@ public class GameplaySystem : MonoBehaviour {
 	[SerializeField] protected AudioClip soundEffectJump;
 	[SerializeField] protected AudioClip soundEffectDeath;
 	[SerializeField] protected AudioClip soundEffectWin;
-	[SerializeField] protected AudioClip soundEffectBreak;
 
 	private AudioSource[] audioSources;
 
@@ -52,9 +51,6 @@ public class GameplaySystem : MonoBehaviour {
 	}
 	public void PlayDeathSoundEffect() {
 		PlaySoundEffect (soundEffectDeath);
-	}
-	public void PlayBreakSoundEffect() {
-		PlaySoundEffect (soundEffectBreak);
 	}
 
 	public void PlaySoundEffect(AudioClip clip) {

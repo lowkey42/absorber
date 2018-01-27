@@ -566,3 +566,4 @@ MonoBehaviour:
   soundEffectJump: {fileID: 8300000, guid: f5adf157a123943baa495e2520b9fed5, type: 3}
   soundEffectDeath: {fileID: 8300000, guid: 5f9f202c0a7324990ac488c7ef0e6f78, type: 3}
   soundEffectWin: {fileID: 0}
+  soundEffectBreak: {fileID: 8300000, guid: 41a6626859fce4655bb365b19eedf4d8, type: 3}

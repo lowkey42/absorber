@@ -79,8 +79,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RequiredElement: 3
-  m_RequiredMinimalVelocity: 2
+  m_RequiredMinimalVelocity: 1
   m_Corpse: {fileID: 1993596236685122, guid: af2995937a2d148d8891da9bb7bc6628, type: 2}
+  m_SoundEffect: {fileID: 8300000, guid: 504b5d1b2c0714b708425e71b2604d9b, type: 3}
 --- !u!212 &212347877647683078
 SpriteRenderer:
   m_ObjectHideFlags: 1
