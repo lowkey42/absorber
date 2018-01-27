@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float m_JumpForce = 400f;                  // Amount of force added when the player jumps.
     [SerializeField] private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
 	[SerializeField] private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
+	[SerializeField] private float m_InertiaFactor = 0;
 	[SerializeField] private bool m_Fly = false;
 
     private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
@@ -82,7 +83,13 @@ public class PlayerMovement : MonoBehaviour
 				m_Rigidbody2D.velocity = new Vector2 (Mathf.Cos(m_FlyAngle), Mathf.Sin(m_FlyAngle)) * m_MaxSpeed;
 
 			} else {
-				m_Rigidbody2D.velocity = new Vector2 (move_x * m_MaxSpeed, m_Rigidbody2D.velocity.y);
+				var vel_x = move_x * m_MaxSpeed;
+
+				if (m_InertiaFactor > 0) {
+					vel_x = Mathf.Lerp (m_Rigidbody2D.velocity.x, vel_x, Time.deltaTime * 10*(1 - m_InertiaFactor));
+				}
+
+				m_Rigidbody2D.velocity = new Vector2 (vel_x, m_Rigidbody2D.velocity.y);
 			}
 
             // If the input is moving the player right and the player is facing left...

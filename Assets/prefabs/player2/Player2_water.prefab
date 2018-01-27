@@ -38,7 +38,6 @@ GameObject:
   - component: {fileID: 50887387762304488}
   - component: {fileID: 114692783715756908}
   - component: {fileID: 114924098691306656}
-  - component: {fileID: 61345709835205168}
   - component: {fileID: 58480266990438390}
   - component: {fileID: 114063424731349548}
   - component: {fileID: 114995289418006322}
@@ -133,38 +132,13 @@ CircleCollider2D:
   m_GameObject: {fileID: 1340764436668784}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 55f8c752ba4cd4971a3864e2e2e9961d, type: 2}
+  m_Material: {fileID: 6200000, guid: 44caae3ed717e4ddca13ac2f3849da06, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.32}
   serializedVersion: 2
   m_Radius: 0.96196526
---- !u!61 &61345709835205168
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1340764436668784}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: b7f1e46ea7e42423da87ba6f2a85a74d, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.4124514}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.56}
-    newSize: {x: 2.56, y: 2.56}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.56, y: 1.7350972}
-  m_EdgeRadius: 0
 --- !u!114 &114063424731349548
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -190,12 +164,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2122a0721e085446d8d30b5e36b33d76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MaxSpeed: 5
-  m_JumpForce: 80000
+  m_MaxSpeed: 2
+  m_JumpForce: 0
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 768
+  m_InertiaFactor: 0.8
+  m_Fly: 0
 --- !u!114 &114924098691306656
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -221,6 +197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Player1Tag: Player1
   m_Player2Tag: Player2
+  m_DieOnCollision: 0
 --- !u!212 &212307366317208840
 SpriteRenderer:
   m_ObjectHideFlags: 1
