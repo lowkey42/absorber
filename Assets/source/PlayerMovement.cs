@@ -34,12 +34,14 @@ public class PlayerMovement : MonoBehaviour
 	}
 
 	public void CopyState(PlayerMovement other) {
-/*		m_FacingRight = other.m_FacingRight;
+		m_FacingRight = other.m_FacingRight;
 
-		Vector3 theScale = transform.localScale;
-		theScale.x *= Mathf.Sign(other.transform.localScale.x);
-		transform.localScale = theScale;
-*/	}
+		if (!m_FacingRight) {
+			Vector3 theScale = transform.localScale;
+			theScale.x *= -1;
+			transform.localScale = theScale;
+		}
+	}
 
 	public void SetFly(bool b) {
 		m_Fly = b;
