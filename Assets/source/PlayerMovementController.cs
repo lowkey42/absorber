@@ -34,8 +34,9 @@ public class PlayerMovementController : MonoBehaviour
     {
         // Read the inputs.
 		float h = CrossPlatformInputManager.GetAxis("Horizontal_P"+m_PlayerId);
+		float v = CrossPlatformInputManager.GetAxis("Vertical_P"+m_PlayerId);
         // Pass all parameters to the character control script.
-        m_Character.Move(h, m_Jump);
+		m_Character.Move(h, v, m_Jump);
         m_Jump = false;
     }
 }

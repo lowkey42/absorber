@@ -8,6 +8,12 @@ public class Killable : MonoBehaviour {
 	[SerializeField] private string m_Player2Tag = "Player2";
 
 
+	void OnCollisionEnter2D(Collision2D collision) {
+		if (collision.collider.Distance (collision.otherCollider).distance > 0.5f) {
+			kill ();
+		}
+	}
+
 	public void kill() {
 		foreach (GameObject go in GameObject.FindGameObjectsWithTag(m_Player1Tag)) {
 			killPlayer (go);

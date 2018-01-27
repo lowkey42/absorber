@@ -203,12 +203,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2122a0721e085446d8d30b5e36b33d76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MaxSpeed: 5
+  m_MaxSpeed: 10
   m_JumpForce: 80000
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 768
+  m_Fly: 1
 --- !u!114 &114924098691306656
 MonoBehaviour:
   m_ObjectHideFlags: 1

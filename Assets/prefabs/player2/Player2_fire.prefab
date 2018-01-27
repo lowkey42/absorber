@@ -182,6 +182,7 @@ MonoBehaviour:
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 768
+  m_Fly: 0
 --- !u!114 &114692933314908342
 MonoBehaviour:
   m_ObjectHideFlags: 1
