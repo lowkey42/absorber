@@ -1,0 +1,26 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:c32552bc8609bb08c94b0c904a933eea:c8d2c98294b36f464e9f238bb786b034:c795de62d16074b2044412e58558ee82$
+#
+:format=40300
+:texture=player_1_electricity.png
+:size=2048x2048
+:pivotpoints=enabled
+:borders=disabled
+
+player_1_electricity_1;985;1547;490;500; 0.5;0.506; 0;0;0;0
+player_1_electricity_2;1519;523;506;511; 0.5019762845849802;0.4990215264187867; 0;0;0;0
+player_1_electricity_3;1;1039;507;503; 0.5009861932938856;0.5009940357852882; 0;0;0;0
+player_1_electricity_4;1;528;500;506; 0.496;0.5; 0;0;0;0
+player_1_electricity_5;1;1547;490;500; 0.5;0.506; 0;0;0;0
+player_1_electricity_6;1011;523;506;511; 0.5019762845849802;0.4990215264187867; 0;0;0;0
+player_1_electricity_7;1477;1544;507;503; 0.5009861932938856;0.5009940357852882; 0;0;0;0
+player_1_electricity_8;1019;1036;500;506; 0.496;0.5; 0;0;0;0
+player_1_electricity_9;493;1547;490;500; 0.5;0.506; 0;0;0;0
+player_1_electricity_10;503;523;506;511; 0.5019762845849802;0.4990215264187867; 0;0;0;0
+player_1_electricity_11;510;1039;507;503; 0.5009861932938856;0.5009940357852882; 0;0;0;0
+player_1_electricity_12;1521;1036;500;506; 0.496;0.5; 0;0;0;0
