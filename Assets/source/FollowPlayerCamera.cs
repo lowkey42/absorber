@@ -19,6 +19,13 @@ public class FollowPlayerCamera : MonoBehaviour {
 
 	private bool m_FirstTarget = true;
 
+	public GameObject getTarget() {
+		return target;
+	}
+	public string getTargetTag() {
+		return followTag;
+	}
+
 	// Update is called once per frame
 	void LateUpdate () {
 		if (target != null && target.activeInHierarchy) {
