@@ -38,11 +38,11 @@ GameObject:
   - component: {fileID: 50887387762304488}
   - component: {fileID: 114692783715756908}
   - component: {fileID: 114924098691306656}
-  - component: {fileID: 61345709835205168}
   - component: {fileID: 58480266990438390}
   - component: {fileID: 114559242680900624}
   - component: {fileID: 114199939484275802}
   - component: {fileID: 114737188550563960}
+  - component: {fileID: 95058480010847524}
   m_Layer: 13
   m_Name: Player2_wind
   m_TagString: Player2
@@ -98,8 +98,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1340764436668784}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.62, y: -2.335, z: 0}
-  m_LocalScale: {x: 0.3916571, y: 0.5175211, z: 1}
+  m_LocalPosition: {x: -4.3303595, y: -11.433394, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children:
   - {fileID: 4847088056962118}
   - {fileID: 4106230349037618}
@@ -138,34 +138,26 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.32}
+  m_Offset: {x: -0.076254904, y: -0.20085335}
   serializedVersion: 2
-  m_Radius: 0.96196526
---- !u!61 &61345709835205168
-BoxCollider2D:
+  m_Radius: 1.1478376
+--- !u!95 &95058480010847524
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1340764436668784}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: b7f1e46ea7e42423da87ba6f2a85a74d, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.4124514}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.56}
-    newSize: {x: 2.56, y: 2.56}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.56, y: 1.7350972}
-  m_EdgeRadius: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a1f52f3a506ef43bfb464c426fc9a1a1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114199939484275802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -211,7 +203,9 @@ MonoBehaviour:
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 768
+  m_InertiaFactor: 0
   m_Fly: 1
+  m_ForceFly: 0
 --- !u!114 &114737188550563960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -269,9 +263,9 @@ SpriteRenderer:
   m_SortingLayerID: -213459621
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6cb0a4faaf3f94242aab69276b34b51f, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 4bbc9d54f209b4ca4a80af2d64fa8519, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 2.56, y: 2.56}
