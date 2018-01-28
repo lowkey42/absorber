@@ -16,11 +16,13 @@ public class GameplaySystem : MonoBehaviour {
 	[SerializeField] protected AudioClip soundEffectWin;
 
 	private AudioSource[] audioSources;
+	private UIController uiController;
 
 	private bool gameWon = false;
 
 	void Start() {
 		audioSources = GetComponents<AudioSource> ();
+		uiController = GameObject.FindObjectOfType<UIController> ();
 	}
 
 	public void PlayAbsorbSoundEffect(Element element) {
@@ -65,7 +67,20 @@ public class GameplaySystem : MonoBehaviour {
 		}
 	}
 
-	void LateUpdate () {
+	private IEnumerator PlaySoundEffectIn(AudioClip clip, float time) {
+		if (clip != null) {
+			yield return new WaitForSecondsRealtime (time);
+
+			foreach (AudioSource src in audioSources) {
+				if (!src.isPlaying) {
+					src.PlayOneShot (clip);
+					break;
+				}
+			}
+		}
+	}
+
+	void Update () {
 		if (gameWon)
 			return;
 
@@ -79,8 +94,32 @@ public class GameplaySystem : MonoBehaviour {
 			gameWon = true;
 			Time.timeScale = 0;
 			Debug.Log ("Level done!");
-			PlaySoundEffect (soundEffectWin);
-			// TODO: show overlay, play sound, redirect to next level
+
+			foreach (AudioSource src in audioSources) {
+				if (src.isPlaying) {
+					StartCoroutine(FadeOut (src, 1f));
+				}
+			}
+
+			StartCoroutine(PlaySoundEffectIn(soundEffectWin, 0.5f));
+
+			if (uiController != null) {
+				uiController.ShowWinScreen ();
+			}
 		}
 	}
+
+	public static IEnumerator FadeOut (AudioSource audioSource, float FadeTime) {
+		float startVolume = audioSource.volume;
+
+		while (audioSource.volume > 0) {
+			audioSource.volume -= startVolume * Time.unscaledTime / FadeTime;
+
+			yield return null;
+		}
+
+		audioSource.Stop ();
+		audioSource.volume = startVolume;
+	}
+
 }

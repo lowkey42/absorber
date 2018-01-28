@@ -2,19 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour {
 
 	public Sprite[] sprites;
 
 	public Sprite[] winSwirlSprites;
-	public Sprite[] winSprites;
 
 	public Image titleImage;
 	public GameObject titleGo;
 
 	public Image winSwirlImage;
 	public Image winImage;
+	public Image winBackground;
 	public GameObject winGo;
 
 	public bool showTitleScreen = true;
@@ -29,9 +30,9 @@ public class UIController : MonoBehaviour {
 		StartCoroutine (playWinAnimation());
 	}
 
-	public IEnumerator playWinAnimation() {
+	private IEnumerator playWinAnimation() {
 		while (!titleScreenDone) {
-			yield return new WaitForSeconds (1f);
+			yield return new WaitForSecondsRealtime (1f);
 		}
 
 		// show swirl and fade in end screen
@@ -41,27 +42,38 @@ public class UIController : MonoBehaviour {
 			c.a = Mathf.Min (1f, ((float)i) / winSwirlSprites.Length * 10);
 			winSwirlImage.color = c;
 
-			// TODO
-			var c2 = winImage.color;
-			var c2FadeBegin = (int)winSwirlSprites.Length * 0.75f;
-			c2.a = Mathf.Min (1f, (i - c2FadeBegin) / c2FadeBegin);
-			winImage.color = c2;
-			yield return new WaitForSeconds (0.2f / winSwirlSprites.Length);
+			var c2 = winBackground.color;
+			c2.a = Mathf.Min (1f, ((float)i) / winSwirlSprites.Length * 10);
+			winBackground.color = c2;
+
+			var c3 = winImage.color;
+			var c3FadeBegin = (int)winSwirlSprites.Length * 0.75f;
+			c3.a = Mathf.Min (1f, (i - c3FadeBegin) / (winSwirlSprites.Length-c3FadeBegin));
+			winImage.color = c3;
+
+			yield return new WaitForSecondsRealtime (2f / winSwirlSprites.Length);
+
+			winGo.SetActive (true);
 		}
 
-		yield return new WaitForSeconds (2f);
+		var c4 = winImage.color;
+		c4.a = 1;
+		winImage.color = c4;
 
-		// TODO: reload scene
+		yield return new WaitForSecondsRealtime (4f);
+
+		Time.timeScale = 1;
+		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
 	}
 
-	public IEnumerator playTitleAnimation() {
+	private IEnumerator playTitleAnimation() {
 		if (showTitleScreen) {
 			for (int i = 0; i < sprites.Length; i++) {
 				titleImage.sprite = sprites [i];
-				yield return new WaitForSeconds (2f / sprites.Length);
+				yield return new WaitForSecondsRealtime (2f / sprites.Length);
 			}
 
-			yield return new WaitForSeconds (1f);
+			yield return new WaitForSecondsRealtime (1f);
 		}
 
 		titleGo.SetActive (false);
