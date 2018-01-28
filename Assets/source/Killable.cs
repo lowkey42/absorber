@@ -8,13 +8,17 @@ public class Killable : MonoBehaviour {
 	[SerializeField] private string m_Player2Tag = "Player2";
 	[SerializeField] private bool m_DieOnCollision = false;
 	private GameplaySystem m_GameplaySys;
+	private Rigidbody2D m_Body;
 
 	private void Awake() {
 		m_GameplaySys = GameObject.FindObjectOfType<GameplaySystem> ();
 	}
+	void Start() {
+		m_Body = GetComponent<Rigidbody2D> ();
+	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
-		if (collision.collider.Distance (collision.otherCollider).distance > 1.0f || m_DieOnCollision) {
+		if (collision.collider.Distance (collision.otherCollider).distance > 1.0f || (m_DieOnCollision && m_Body!=null && m_Body.velocity.magnitude>0.1f)) {
 			kill ();
 		}
 	}
