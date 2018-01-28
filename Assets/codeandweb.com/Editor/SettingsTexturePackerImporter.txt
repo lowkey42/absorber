@@ -17,6 +17,7 @@ tpsheetFileNames:
 - Assets/sprites/players/player_2_fire.tpsheet
 - Assets/sprites/players/player_2_neutral.tpsheet
 - Assets/sprites/players/player_2_stone.tpsheet
+- Assets/sprites/players/player_2_water.tpsheet
 - Assets/sprites/players/wind.tpsheet
 textureFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
@@ -35,9 +36,11 @@ textureFileNames:
 - Assets/sprites/players/player_2_fire.png
 - Assets/sprites/players/player_2_neutral.png
 - Assets/sprites/players/player_2_stone.png
+- Assets/sprites/players/player_2_water.png
 - Assets/sprites/players/wind.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
 - 
 - 
 - 

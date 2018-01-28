@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 58480266990438390}
   - component: {fileID: 114063424731349548}
   - component: {fileID: 114995289418006322}
+  - component: {fileID: 95373779018256514}
   m_Layer: 10
   m_Name: Player2_water
   m_TagString: Player2
@@ -70,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1251442853192284}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 1.27, z: 0}
+  m_LocalPosition: {x: 0.03, y: 1.81, z: 0}
   m_LocalScale: {x: 4.523165, y: 3.4231067, z: 1}
   m_Children: []
   m_Father: {fileID: 4997627409369232}
@@ -83,7 +84,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1479974955069044}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: -1.28, z: 0}
+  m_LocalPosition: {x: -0, y: -1.95, z: 0}
   m_LocalScale: {x: 2.5532537, y: 1.9322884, z: 1}
   m_Children: []
   m_Father: {fileID: 4997627409369232}
@@ -96,8 +97,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1340764436668784}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.62, y: -2.335, z: 0}
-  m_LocalScale: {x: 0.3916571, y: 0.5175211, z: 1}
+  m_LocalPosition: {x: -2.734947, y: -10.878478, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children:
   - {fileID: 4847088056962118}
   - {fileID: 4106230349037618}
@@ -136,9 +137,26 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.32}
+  m_Offset: {x: 0.12347013, y: -0.3683126}
   serializedVersion: 2
-  m_Radius: 0.96196526
+  m_Radius: 1.5310013
+--- !u!95 &95373779018256514
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1340764436668784}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 43ea2a7caa78a41f6b87520a0e6f020f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114063424731349548
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -172,6 +190,7 @@ MonoBehaviour:
     m_Bits: 768
   m_InertiaFactor: 0.8
   m_Fly: 0
+  m_ForceFly: 0
 --- !u!114 &114924098691306656
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -232,9 +251,9 @@ SpriteRenderer:
   m_SortingLayerID: -213459621
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 36b07026403d24c69824174af16d5472, type: 3}
+  m_Sprite: {fileID: 21300002, guid: d8b9f206ad6104e1894aefc5c81e31e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 2.56, y: 2.56}
