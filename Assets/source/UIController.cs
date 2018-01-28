@@ -24,10 +24,25 @@ public class UIController : MonoBehaviour {
 	public bool showTitleScreen = true;
 
 	private bool titleScreenDone = false;
+	private bool gameRunning = false;
 
 	void Start() {
 		StartCoroutine (playTitleAnimation());
 		Time.timeScale = 0;
+	}
+
+	void Update() {
+		if (CrossPlatformInputManager.GetButtonDown ("quit")) {
+			if (gameRunning) {
+				Time.timeScale = 0;
+				gameRunning = false;
+				SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
+			} else {
+				Application.Quit();
+				Debug.Log ("Quit!");
+			}
+		}
+
 	}
 
 	public void ShowWinScreen() {
@@ -66,7 +81,8 @@ public class UIController : MonoBehaviour {
 
 		yield return new WaitForSecondsRealtime (4f);
 
-		Time.timeScale = 1;
+		Time.timeScale = 0;
+		gameRunning = false;
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
 	}
 
@@ -91,6 +107,7 @@ public class UIController : MonoBehaviour {
 
 		titleGo.SetActive (false);
 		titleScreenDone = true;
+		gameRunning = true;
 		Time.timeScale = 1;
 	}
 
