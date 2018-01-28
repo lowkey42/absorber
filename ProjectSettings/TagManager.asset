@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Player1
+  - Player2
   layers:
   - Default
   - TransparentFX
@@ -13,17 +15,17 @@ TagManager:
   - UI
   - 
   - 
+  - Ground
+  - Player
+  - Player_water
+  - Player_electricity
+  - Player_fire
+  - Player_wind
+  - Fluid_passable
+  - Metal
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - BG_cam1
+  - BG_cam2
   - 
   - 
   - 
@@ -40,4 +42,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ultra-Background
+    uniqueID: 3936819941
+    locked: 0
+  - name: Background
+    uniqueID: 4087703705
+    locked: 0
+  - name: Middleground
+    uniqueID: 2000816637
+    locked: 0
+  - name: Gameplay
+    uniqueID: 3085516393
+    locked: 0
+  - name: Player
+    uniqueID: 4081507675
+    locked: 0
+  - name: Foreground
+    uniqueID: 605641463
     locked: 0

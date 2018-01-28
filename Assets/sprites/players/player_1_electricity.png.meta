@@ -1,0 +1,268 @@
+fileFormatVersion: 2
+guid: 379d543d66225441382eef5aea9ae56e
+timeCreated: 1517083133
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: player_1_electricity
+    21300002: player_1_electricity_1
+    21300004: player_1_electricity_2
+    21300006: player_1_electricity_3
+    21300008: player_1_electricity_4
+    21300010: player_1_electricity_5
+    21300012: player_1_electricity_6
+    21300014: player_1_electricity_7
+    21300016: player_1_electricity_8
+    21300018: player_1_electricity_9
+    21300020: player_1_electricity_10
+    21300022: player_1_electricity_11
+    21300024: player_1_electricity_12
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 1
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player_1_electricity_1
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 1547
+        width: 490
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.506}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_1_electricity_2
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 523
+        width: 506
+        height: 511
+      alignment: 9
+      pivot: {x: 0.5019763, y: 0.49902153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_1_electricity_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1039
+        width: 507
+        height: 503
+      alignment: 9
+      pivot: {x: 0.5009862, y: 0.500994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_1_electricity_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 528
+        width: 500
+        height: 506
+      alignment: 9
+      pivot: {x: 0.496, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_1_electricity_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1547
+        width: 490
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.506}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_1_electricity_6
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 523
+        width: 506
+        height: 511
+      alignment: 9
+      pivot: {x: 0.5019763, y: 0.49902153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_1_electricity_7
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 1544
+        width: 507
+        height: 503
+      alignment: 9
+      pivot: {x: 0.5009862, y: 0.500994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_1_electricity_8
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 1036
+        width: 500
+        height: 506
+      alignment: 9
+      pivot: {x: 0.496, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_1_electricity_9
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1547
+        width: 490
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.506}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_1_electricity_10
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 523
+        width: 506
+        height: 511
+      alignment: 9
+      pivot: {x: 0.5019763, y: 0.49902153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_1_electricity_11
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1039
+        width: 507
+        height: 503
+      alignment: 9
+      pivot: {x: 0.5009862, y: 0.500994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: player_1_electricity_12
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 1036
+        width: 500
+        height: 506
+      alignment: 9
+      pivot: {x: 0.496, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
