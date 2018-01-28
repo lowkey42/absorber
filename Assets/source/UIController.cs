@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class UIController : MonoBehaviour {
 
 	public Sprite[] sprites;
+	public Sprite tutorialSprite;
 
 	public Sprite[] winSwirlSprites;
 
 	public Image titleImage;
+	public Image titleBackground;
 	public GameObject titleGo;
 
 	public Image winSwirlImage;
@@ -24,6 +27,7 @@ public class UIController : MonoBehaviour {
 
 	void Start() {
 		StartCoroutine (playTitleAnimation());
+		Time.timeScale = 0;
 	}
 
 	public void ShowWinScreen() {
@@ -74,10 +78,20 @@ public class UIController : MonoBehaviour {
 			}
 
 			yield return new WaitForSecondsRealtime (1f);
+
+			if (tutorialSprite!=null) {
+				titleBackground.color = new Color (77f/255f,77f/255f,77f/255f);
+				titleImage.sprite = tutorialSprite;
+
+				while (!CrossPlatformInputManager.GetButtonDown ("Vertical_P1") && !CrossPlatformInputManager.GetButtonDown ("Vertical_P2") && !CrossPlatformInputManager.GetButtonDown ("Horizontal_P1") && !CrossPlatformInputManager.GetButtonDown ("Horizontal_P2")) {
+					yield return new WaitForSecondsRealtime (0.01f);
+				}
+			}
 		}
 
 		titleGo.SetActive (false);
 		titleScreenDone = true;
+		Time.timeScale = 1;
 	}
 
 }

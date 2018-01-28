@@ -405,27 +405,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 54039bce16a5e4c068f30b898655bdd8, type: 3}
   - {fileID: 21300000, guid: aa334b9ab15b1480daec882780215e78, type: 3}
   - {fileID: 21300000, guid: 67d2eec08bf834ee3a601814bc05fd89, type: 3}
-  - {fileID: 21300000, guid: 3147745ad6310483895116a744a740cb, type: 3}
-  - {fileID: 21300000, guid: 9bda76c94dd684770934c33c7a6aa2d7, type: 3}
-  - {fileID: 21300000, guid: 9c0596b483cc4486da83d34794376683, type: 3}
-  - {fileID: 21300000, guid: 7e3916aeb9508439683003da9c2645cc, type: 3}
-  - {fileID: 21300000, guid: b88c31684dbbb46e0be7af457baa3f77, type: 3}
-  - {fileID: 21300000, guid: 61e31d4915b424e4d80e134e56f856b9, type: 3}
-  - {fileID: 21300000, guid: b7358f79948b84bdfa33b75b83e6f530, type: 3}
-  - {fileID: 21300000, guid: 53f54e6d8121d445da7a6826f38a6d7e, type: 3}
-  - {fileID: 21300000, guid: cc7611c7f3c234127aa3a33bcbd2ed50, type: 3}
-  - {fileID: 21300000, guid: 3c096914ffa6b446f858d7cd1df99ff6, type: 3}
-  - {fileID: 21300000, guid: 54f042aeff9f140818f434577b4a5bb3, type: 3}
-  - {fileID: 21300000, guid: a3d7381d3b152479bb00e584b0378628, type: 3}
-  - {fileID: 21300000, guid: 689511b58f81d4fd195084ecd00316b3, type: 3}
-  - {fileID: 21300000, guid: 5975578541cb54ec9b8d121c1c92ad4a, type: 3}
-  - {fileID: 21300000, guid: 4caac928a671e494c9115c793a3d62e7, type: 3}
-  - {fileID: 21300000, guid: 065e4dfa9c57142a0aa2e968edfd661d, type: 3}
-  - {fileID: 21300000, guid: 05030d6834860462cbc4da7e2076fbd6, type: 3}
-  - {fileID: 21300000, guid: 041bd8c31dff64036a7e30b42e1f85d6, type: 3}
-  - {fileID: 21300000, guid: e9d87b7e4a5454beba7b7d60332888c5, type: 3}
-  - {fileID: 21300000, guid: b6254999952284ad1a9e0d7c099cd860, type: 3}
-  - {fileID: 21300000, guid: 621b900a7cff44016ad2142e316fa831, type: 3}
+  tutorialSprite: {fileID: 21300000, guid: 56a5265ad08934ff4a89e0d72025e2d1, type: 3}
   winSwirlSprites:
   - {fileID: 21300000, guid: ae861f67d2cc041d09da8c8e65cea9ab, type: 3}
   - {fileID: 21300000, guid: cc2e8efd98951418b9b0d67fb3567dad, type: 3}
@@ -458,6 +438,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: eb00fb09d60ca4181a5a07198ca36c04, type: 3}
   - {fileID: 21300000, guid: 82115fa7d2fe54f72b495959f13a03ff, type: 3}
   titleImage: {fileID: 114117159641119404}
+  titleBackground: {fileID: 114692094312208866}
   titleGo: {fileID: 1934394942174182}
   winSwirlImage: {fileID: 114958773759953556}
   winImage: {fileID: 114196790468801874}
